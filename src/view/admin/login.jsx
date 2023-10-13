@@ -6,8 +6,8 @@ import md5 from 'js-md5';
 
 const Login = () => {
 	const navigate = useNavigate();
-	const email = 'ki@sooi.top'
-	const pwd = '75ad87b5f7d5652051466ec11db64760'
+	const email = 'wtj-king@qq.com'
+	const pwd = '3d24b838770ee90773804e8599e549ff'
 	const onFinish = (values) => {
 		const username = values.username
 		const password = md5(values.password)
@@ -17,7 +17,7 @@ const Login = () => {
 			password:'',
 			remember:values.remember,
 			LoginStatus:'',
-			token:'123'
+			token:'123456'
 		}
 		if (username===email && password===pwd) {
 			userinfo.LoginStatus=true;

@@ -13,6 +13,7 @@
   "dependencies": {
     "antd": "^5.4.7",
     "default-passive-events": "^2.0.0",
+    "fs": "^0.0.1-security",
     "js-md5": "^0.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
