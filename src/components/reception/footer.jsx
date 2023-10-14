@@ -9,14 +9,14 @@ const Footer = () => {
         <div>
         部分资源来自网络，如有侵权请联系
         <code>
-        <a href="mailto:ki@sooi.top"  rel="noopener noreferrer">
-          ki@sooi.top</a>
+        <a href="mailto:mokingboygirl@gmail.com"  rel="noopener noreferrer">
+          mokingboygirl@gmail.com</a>
         </code>
 
         处理
         </div>
 
-        <div>&copy; 眠羊20223</div>
+        <div>&copy; 小王摄影 2022-2023</div>
       </div>
 
     </footer>
