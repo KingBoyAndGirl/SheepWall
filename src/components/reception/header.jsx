@@ -66,8 +66,8 @@ const Header = () => {
                 <NavLink className='link' to='/videowall'   >📽️视频墙</NavLink>
                 {/*<NavLink className='link' to='/about'       >👻关于</NavLink>*/}
                 <span style={{ cursor: 'none' }}>|</span>
-                {/*<span*/}
-                {/*    onClick={bright}>{emoji}</span>*/}
+                <span
+                    onClick={bright}>{emoji}</span>
                 {/*<span className='user'>*/}
                 {/*    <NavLink to='/admin'     ><UserOutlined /></NavLink>*/}
                 {/*</span>*/}
