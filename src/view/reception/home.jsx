@@ -20,25 +20,31 @@ const Home = () => {
     const [ImgInfo, setImgInfo] = useState([]);
 
     const fileSrc = (filename) => {
-        return `${window.location.origin}/src/assets/photo/${filename}`;
-    }
+        // 引入文件
+        return new URL(`/src/assets/home/${filename}`, import.meta.url).href;
+    };
 
     useEffect(() => {
-        init();
-        animate();
-        if (!dataLoaded) {
-            loadImageData();
-        }
+        setTimeout(() => {
+            init();
+            animate();
+            if (!dataLoaded) {
+                loadImageData();
+            }
+        }, 150);
     }, [dataLoaded]);
 
+
     function loadImageData() {
-        // 使用fetch获取外部URL中的数据
-        fetch('https://raw.githubusercontent.com/KingBoyAndGirl/SheepWall/master/src/assets/photo.json')
+        fetch('/src/assets/home.json')
+                  // // 使用fetch获取外部URL中的数据
+                  // fetch('https://raw.githubusercontent.com/KingBoyAndGirl/SheepWall/master/src/assets/home.json')
                   .then(response => response.json())
                   .then(data => {
                       // 去重处理，使用 Set 数据结构
                       const uniqueData = Array.from(new Set(data.map(item => JSON.stringify(item)))).map(item => JSON.parse(item));
                       setImgInfo(uniqueData);
+                      console.log(uniqueData)
                       setDataLoaded(true);
                   })
                   .catch(error => {
