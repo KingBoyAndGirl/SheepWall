@@ -25,26 +25,26 @@ const routerItems   =
             auth:false,
           },
         children:[
+            // {
+            //     //登录进来默认页面
+            //     path:"/",
+            //     index: "index",
+            //     element: Home,
+            //     meta: {
+            //         title: '首页',
+            //         auth:false,
+            //       },
+            // },
+            // {
+            //     path: 'about',
+            //     element: About,
+            //     meta: {
+            //         title: '关于',
+            //         auth:false,
+            //       },
+            // },
             {
-                //登录进来默认页面
-                path:"/",
-                index: "index",
-                element: Home,
-                meta: {
-                    title: '首页',
-                    auth:false,
-                  },
-            },
-            {
-                path: 'about',
-                element: About,
-                meta: {
-                    title: '关于',
-                    auth:false,
-                  },
-            },
-            {
-                path:'photowall',
+                path:'/',
                 element:PhotoWall,
                 meta: {
                     title: '照片墙',

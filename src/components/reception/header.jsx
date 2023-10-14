@@ -58,19 +58,19 @@ const Header = () => {
                     <img src={logo} alt="Logo" height='60' width='60' />
                 </div>
 
-                <span>Sheep Wall</span>
+                <span>Memories Wall</span>
             </div>
             <div>
-                <NavLink className='link' to='/'           >🏠首页</NavLink>
+                {/*<NavLink className='link' to='/'           >🏠首页</NavLink>*/}
                 <NavLink className='link' to='/photowall'   >📷照片墙</NavLink>
                 <NavLink className='link' to='/videowall'   >📽️视频墙</NavLink>
-                <NavLink className='link' to='/about'       >👻关于</NavLink>
+                {/*<NavLink className='link' to='/about'       >👻关于</NavLink>*/}
                 <span style={{ cursor: 'none' }}>|</span>
-                <span
-                    onClick={bright}>{emoji}</span>
-                <span className='user'>
-                    <NavLink to='/admin'     ><UserOutlined /></NavLink>
-                </span>
+                {/*<span*/}
+                {/*    onClick={bright}>{emoji}</span>*/}
+                {/*<span className='user'>*/}
+                {/*    <NavLink to='/admin'     ><UserOutlined /></NavLink>*/}
+                {/*</span>*/}
 
             </div>
         </nav>
@@ -78,7 +78,7 @@ const Header = () => {
     const Mobile =
         <nav className='Mobile' >
             <div  onClick={handleGoTo}>
-                <img src={logo} alt="Logo" width='38' /><span>Sheep Wall</span>
+                <img src={logo} alt="Logo" width='38' /><span>Memories Wall</span>
             </div>
             <div>
                 <span onClick={showDrawer}>

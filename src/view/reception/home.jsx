@@ -21,7 +21,7 @@ const Home = () => {
 
     const fileSrc = (filename) => {
         // 引入文件
-        return new URL(`/src/assets/home/${filename}`, import.meta.url).href;
+        return new URL(`/src/assets/home/compressed/${filename}`, import.meta.url).href;
     };
 
     useEffect(() => {
