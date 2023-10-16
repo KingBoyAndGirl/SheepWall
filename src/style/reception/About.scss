@@ -1,47 +1,34 @@
-.About {
-    width: 50%;
-    margin: auto;
-    height: 100%;
+/* 默认样式 */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 62vh;
+}
 
-    .introduce {
+.header {
+    background-color: #ff9900;
+    color: #fff;
+    text-align: center;
+    padding: 5% 0;
+    width: 80%;
+}
 
-        div {
+.content {
+    width: 100%;
+}
 
-            text-indent: 30px;
-            margin: 15px 0;
-            line-height: 28px;
-        }
+/* 媒体查询，根据屏幕宽度调整样式 */
+@media screen and (max-width: 768px) {
+    .promo-container, .pricing-container {
+        width: 100%;
     }
-
-    a {
-        @include font-color('border-color')
+    .about{
+        height: 32vh;
     }
-    .Specification{
-        line-height: 28px;
-        li{
-            margin: 10px 0 10px 45px;
-            list-style:unset !important;
-
-        }
-        
-    }
-    .ContactUs ,ul{
-        margin: 15px 0;
-        li {
-
-            text-indent: 30px;
-            line-height: 28px;
-        }
-    }
-    p{
-        margin: 15px 0;
-        text-indent: 30px;
-        cursor: pointer;
-        @include font-color('border-color')
+    /* 在较小的屏幕上进行调整 */
+    .promo-container .promo-text, .pricing-container .pricing {
+        font-size: 18px;
     }
 }
-@media screen and (max-width: 1024px){
-    .About {
-        width: 70%;
-    }
-  }

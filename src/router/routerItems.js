@@ -35,14 +35,14 @@ const routerItems   =
             //         auth:false,
             //       },
             // },
-            // {
-            //     path: 'about',
-            //     element: About,
-            //     meta: {
-            //         title: '关于',
-            //         auth:false,
-            //       },
-            // },
+            {
+                path: 'about',
+                element: About,
+                meta: {
+                    title: '关于',
+                    auth:false,
+                  },
+            },
             {
                 path:'/',
                 element:PhotoWall,
