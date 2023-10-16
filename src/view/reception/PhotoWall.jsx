@@ -8,7 +8,7 @@ const Img = () => {
       useEffect(() => {
             // fetch('/src/assets/photo.json')
             // // 使用fetch获取外部URL中的数据
-            fetch('https://raw.githubusercontent.com/KingBoyAndGirl/SheepWall/master/src/assets/photo.json')
+            fetch('https://ghproxy.com/https://raw.githubusercontent.com/KingBoyAndGirl/SheepWall/master/src/assets/photo.json')
                       .then((response) => response.json())
                       .then((data) => {
                             setPhotoList(data);

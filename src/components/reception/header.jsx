@@ -62,7 +62,7 @@ const Header = () => {
             </div>
             <div>
                 {/*<NavLink className='link' to='/'           >🏠首页</NavLink>*/}
-                <NavLink className='link' to='/photowall'   >📷照片墙</NavLink>
+                <NavLink className='link' to='/'   >📷照片墙</NavLink>
                 <NavLink className='link' to='/videowall'   >📽️视频墙</NavLink>
                 <NavLink className='link' to='/about'       >👻关于</NavLink>
                 <span style={{ cursor: 'none' }}>|</span>
@@ -94,7 +94,7 @@ const Header = () => {
                 }
             >
                 {/*<li onClick={()=>setOpen(false)}>    <NavLink to='/'             >🏠首页</NavLink></li>*/}
-                <li onClick={()=>setOpen(false)}>    <NavLink to='/photowall'   >📷照片墙</NavLink></li>
+                <li onClick={()=>setOpen(false)}>    <NavLink to='/'   >📷照片墙</NavLink></li>
                 <li onClick={()=>setOpen(false)}>    <NavLink to='/videowall'   >📽️视频墙</NavLink></li>
                 <li onClick={()=>setOpen(false)}>    <NavLink to='/about'       >👻关于</NavLink></li>
 
