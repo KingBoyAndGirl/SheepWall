@@ -89,7 +89,7 @@ const Header = () => {
                 extra={
                     <Space>
                         <span style={{ cursor: 'pointer', userSelect: 'none' }} onClick={bright}>{emoji}</span>
-                        <NavLink to='/admin'     ><UserOutlined /></NavLink>
+                        {/*<NavLink to='/admin'     ><UserOutlined /></NavLink>*/}
                     </Space>
                 }
             >

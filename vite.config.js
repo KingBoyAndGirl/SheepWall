@@ -18,7 +18,7 @@ export default defineConfig({
         rollupOptions: {
               output: {
                     // 将不希望被打包的文件或目录排除在构建之外
-                    exclude: ['/src/assets/photo/**'],
+                    exclude: ['/src/assets/photo/**','src/assets/home/**'],
               },
         },
 		minify: "terser", // 必须开启：使用terserOptions才有效果
