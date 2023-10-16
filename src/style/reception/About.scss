@@ -20,12 +20,12 @@
 }
 
 /* 媒体查询，根据屏幕宽度调整样式 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .promo-container, .pricing-container {
         width: 100%;
     }
     .about{
-        height: 32vh;
+        height: 48vh !important;
     }
     /* 在较小的屏幕上进行调整 */
     .promo-container .promo-text, .pricing-container .pricing {

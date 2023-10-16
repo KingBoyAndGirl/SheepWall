@@ -1,8 +1,8 @@
 import '@/style/reception/footer.scss';
 
 const Footer = () => {
-  const douyinLink = "抖音跳转链接"; // 将 "抖音跳转链接" 替换为实际的抖音跳转链接
-  const xiaohongshuLink = "小红书跳转链接"; // 将 "小红书跳转链接" 替换为实际的小红书跳转链接
+  const douyinLink = "https://v.douyin.com/id5BSE8g/"; // 将 "抖音跳转链接" 替换为实际的抖音跳转链接
+  const xiaohongshuLink = "https://www.xiaohongshu.com/user/profile/5e2b0aa60000000001004d2b?xhsshare=CopyLink&appuid=5e2b0aa60000000001004d2b&apptime=1697446529"; // 将 "小红书跳转链接" 替换为实际的小红书跳转链接
 
   // Must add passHref to Link
   return (
