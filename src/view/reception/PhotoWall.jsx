@@ -18,10 +18,16 @@ const Img = () => {
                       });
       }, []);
 
+      // const fileSrc = (filename) => {
+      //       // 引入文件
+      //       return new URL(`/src/assets/photo/${filename}`, import.meta.url).href;
+      // };
       const fileSrc = (filename) => {
-            // 引入文件
-            return new URL(`/src/assets/photo/${filename}`, import.meta.url).href;
+            // 直接返回远程GitHub文件的URL
+            return `https://ghproxy.com/https://raw.githubusercontent.com/KingBoyAndGirl/SheepWall/master/src/assets/photo/${filename}`;
       };
+3
+
 
       const listItems = photoList.map((item, index) => (
                 <Image key={index} alt="SHEEP" src={fileSrc(item.src)} />
