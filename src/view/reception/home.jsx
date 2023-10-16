@@ -267,12 +267,12 @@ const Home = () => {
                             shape="square"
                             open={false}
                   >
-                      <div id="menu">
-                          <button id="table">TABLE</button>
-                          <button id="sphere">SPHERE</button>
-                          <button id="helix">HELIX</button>
-                          <button id="grid">GRID</button>
-                      </div>
+                      {/*<div id="menu">*/}
+                      {/*    <button id="table">TABLE</button>*/}
+                      {/*    <button id="sphere">SPHERE</button>*/}
+                      {/*    <button id="helix">HELIX</button>*/}
+                      {/*    <button id="grid">GRID</button>*/}
+                      {/*</div>*/}
                   </FloatButton.Group>
               </section>
     )
